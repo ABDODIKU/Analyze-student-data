@@ -24,12 +24,13 @@ what do you want ?
             
         except:
             print("ادخل الدرجات بالأرقام فقط")
+            continue 
     elif service == 2 :
         try :
             name = input("enter the neme\n")
             mark = int(input("enter mark\n"))
             manage.update(name,mark)
-        except:
+        except ValueError :
             print("ادخل الدرجات بالأرقام فقط")
     elif service ==3 :
         manage.random_student()
