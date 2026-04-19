@@ -23,7 +23,7 @@ what do you want ?
             mark = int(input("enter mark\n"))
             manage.add_student(name,mark)
             
-        except:
+        except ValueError :
             print("ادخل الدرجات بالأرقام فقط")
             continue 
     elif service == 2 :
