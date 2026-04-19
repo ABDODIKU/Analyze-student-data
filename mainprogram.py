@@ -13,9 +13,10 @@ what do you want ?
   5 : marks avrage
   6 : exit
 """))
-    except :
+    except ValueError:
         print("ادخل ارقام فقد")
-
+        continue
+    
     if service == 1 :
         try :
             name = input("enter the neme\n")
